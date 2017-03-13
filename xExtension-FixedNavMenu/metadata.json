@@ -1,0 +1,8 @@
+{
+	"name": "Fixed Nav Menu",
+	"author": "Marco Heizmann",
+	"description": "Sets the position of the navigation menu to fixed when scrolling down.",
+	"version": 0.1,
+	"entrypoint": "FixedNavMenu",
+	"type": "user"
+}
