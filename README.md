@@ -8,3 +8,6 @@ Currently supports:
 
 The bottom-navigation is hidden by default, to show:
 - show bottom-navigation (double-tap on header navigation)
+
+# Installation
+To use it, upload the *xExtension-TouchControl* folder in your ./extensions directory and enable it on the extension panel in FreshRSS.
