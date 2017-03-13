@@ -3,8 +3,8 @@
 class KeepFolderStateExtension extends Minz_Extension {
 
     public function init() {
-        Minz_View::appendScript($this->getFileUrl('jquerymin.js', 'js', '', 'async'));
-        Minz_View::appendScript($this->getFileUrl('script.js', 'js', 'defer', ''));  
+        Minz_View::appendScript($this->getFileUrl('jquerymin.js', 'js'), '', '', 'async');
+        Minz_View::appendScript($this->getFileUrl('script.js', 'js'), '', 'defer', '');       
     }
 
 }
