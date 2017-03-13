@@ -1,13 +1,11 @@
-# freshrss-touchextension
-Add touch gestures to FreshRSS
+# FreshRSS extensions
+This repository contains my unfficial FreshRSS extensions.
 
-Currently supports: 
-- next article (swipe left), 
-- previous article (swipe right)
-- open folder-menu (double-tap on article content)
+To install an extension, download the extension archive first and extract it on your PC. 
+Then, upload the specific extension(s) you want on your server. 
 
-The bottom-navigation is hidden by default, to show:
-- show bottom-navigation (double-tap on header navigation)
+Extensions must be in the ./extensions directory of your FreshRSS installation.
 
-# Installation
-To use it, upload the *xExtension-TouchControl* folder in your ./extensions directory and enable it on the extension panel in FreshRSS.
+---
+
+The official repository for FreshRSS extensions: https://github.com/FreshRSS/Extensions
