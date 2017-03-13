@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function($){
 
     $.detectSwipe.preventDefault = false;
     $.detectSwipe.threshold = 60;

@@ -22,9 +22,14 @@ $(document).ready(function(){
             if (scroll > position) {
                 $('.nav_menu').slideUp();
             } else {
+                
                 if (diff > scroll_tolerance) {
                     $('.nav_menu').slideDown();
+                }                
+                else if (scroll < 20) {
+                    $('.nav_menu').slideDown();
                 }
+                
             }
 
             position = scroll;
