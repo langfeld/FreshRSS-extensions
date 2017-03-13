@@ -1,4 +1,4 @@
-(function($){
+$(document).ready(function(){
 
     $.detectSwipe.preventDefault = false;
     $.detectSwipe.threshold = 60;
@@ -26,4 +26,4 @@
         $('.btn.toggle_aside')[0].click();
     });
 
-})(jQuery); 
+});

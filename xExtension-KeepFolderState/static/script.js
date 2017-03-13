@@ -1,4 +1,4 @@
-(function($){
+$(document).ready(function(){
 
     /* Init */
     var identifier = 0;
@@ -63,4 +63,4 @@
 
     });
 
-})(jQuery); 
+});
