@@ -1,6 +1,6 @@
 <?php
 
-class FixedNavMenu extends Minz_Extension {
+class FixedNavMenuExtension extends Minz_Extension {
 
     public function init() {
         Minz_View::appendStyle($this->getFileUrl('style.css', 'css'));
