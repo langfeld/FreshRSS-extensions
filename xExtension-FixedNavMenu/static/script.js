@@ -1,4 +1,4 @@
-$(function () {
+(function($){
 
     function sticky_menu() {
 
@@ -29,4 +29,4 @@ $(function () {
 
     }
 
-});
+})(jQuery); 

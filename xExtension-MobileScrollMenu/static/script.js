@@ -1,4 +1,4 @@
-$(function () {
+(function($){
 
     var width = $(window).width();
     if (width <= 768) {
@@ -33,4 +33,4 @@ $(function () {
 
     }
 
-});
+})(jQuery); 
