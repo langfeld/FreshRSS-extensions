@@ -1,4 +1,4 @@
-# freshrss-touchextension
+# FreshRSS TouchControl
 Add touch gestures to FreshRSS
 
 Currently supports: 
