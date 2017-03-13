@@ -19,10 +19,12 @@ $(document).ready(function(){
 
                 // Set new state icon
                 $(this).children().each(function () {
-                    if (this.alt === '▽') {
+                    
+                    if (this.src.includes('down.svg')) {
                         this.src = this.src.replace('/icons/down.', '/icons/up.');
                         this.alt = '△';
                     }
+                    
                 });
 
             }
@@ -41,7 +43,7 @@ $(document).ready(function(){
             // Get element identifier
             identifier = $(this).parent().data('uid');
 
-            if (this.alt === '▽') {
+            if (this.src.includes('down.svg')) {
 
                 // Check for stored toggle state
                 var thisState = localStorage.getItem('freshrss-toggle-state-' + identifier);
