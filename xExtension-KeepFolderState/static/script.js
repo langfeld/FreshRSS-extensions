@@ -1,0 +1,55 @@
+jQuery(function ($) {
+
+    /* Init */
+    var identifier = 0;
+    var thisState;
+    $('.tree-folder-title>.dropdown-toggle').each(function () {
+
+        // Set element identifier
+        $(this).data('uid', identifier);
+        $(this).attr('data-uid', identifier);
+
+        // Check for stored toggle state
+        thisState = localStorage.getItem('freshrss-toggle-state-' + identifier);
+        if (thisState) {
+            if ($('.tree-folder-title>.dropdown-toggle[data-uid="' + identifier + '"]').length) {
+                $('.tree-folder-title>.dropdown-toggle[data-uid="' + identifier + '"]')[0].click();
+            }
+        }
+
+        identifier++;
+
+    });
+
+
+    /* Listener */
+    $('#aside_feed').on('click', '.tree-folder>.tree-folder-title>a.dropdown-toggle', function () {
+
+        $(this).children().each(function () {
+
+            // Get element identifier
+            identifier = $(this).parent().data('uid');
+
+            if (this.alt === '▽') {
+
+                // Check for stored toggle state
+                var thisState = localStorage.getItem('freshrss-toggle-state-' + identifier);
+                if (thisState) {
+
+                    localStorage.removeItem('freshrss-toggle-state-' + identifier);
+
+                }
+
+                // console.log('Close');
+
+            } else {
+
+                localStorage.setItem('freshrss-toggle-state-' + identifier, "open");
+
+                // console.log('Open');
+            }
+        });
+
+    });
+
+});
