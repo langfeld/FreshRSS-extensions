@@ -43,7 +43,7 @@ $(document).ready(function(){
             // Get element identifier
             identifier = $(this).parent().data('uid');
 
-            if (this.src.includes('down.svg')) {
+            if (this.src.includes('up.svg')) {
 
                 // Check for stored toggle state
                 var thisState = localStorage.getItem('freshrss-toggle-state-' + identifier);
