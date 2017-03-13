@@ -1,4 +1,4 @@
-jQuery(function ($) {
+$(function () {
 
     /* Init */
     var identifier = 0;

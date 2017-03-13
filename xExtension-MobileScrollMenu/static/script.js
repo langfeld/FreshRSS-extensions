@@ -1,4 +1,4 @@
-jQuery(function ($) {
+$(function () {
 
     var width = $(window).width();
     if (width <= 768) {

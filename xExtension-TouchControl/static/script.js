@@ -1,4 +1,4 @@
-jQuery(function ($) {
+$(function () {
 
     $.detectSwipe.preventDefault = false;
     $.detectSwipe.threshold = 60;
