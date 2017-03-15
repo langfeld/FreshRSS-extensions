@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
     var width = $(window).width();
     if (width <= 768) {
@@ -14,18 +14,36 @@ $(document).ready(function(){
         // StartPos
         var position = $(window).scrollTop();
 
-        $(window).scroll(function () {
+        // Prevent scrolljumps while switching articles
+        var scrollcounter = 0;
+        var scrolltimer;
+
+        $(window).scroll(function() {
 
             var scroll = $(window).scrollTop();
             var diff = Math.abs(position - $(window).scrollTop());
 
+            // Prevent scrolljumps while switching articles
+            if (scrolltimer) {
+                scrollcounter++;
+                clearTimeout(scrolltimer);
+            }
+            scrolltimer = setTimeout(function() {
+                scrollcounter=0;
+            }, 1000);
+
+            // Scrolling down
             if (scroll > position) {
                 $('.nav_menu').slideUp();
-            } else {
+            } 
+            else {
                 
-                if (diff > scroll_tolerance) {
+                // Scrolled up and no jump
+                if (diff > scroll_tolerance && scrollcounter > 5) {
                     $('.nav_menu').slideDown();
-                }                
+                }
+                
+                // Reached top
                 else if (scroll < 20) {
                     $('.nav_menu').slideDown();
                 }
