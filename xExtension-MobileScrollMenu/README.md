@@ -6,3 +6,10 @@ Automatically hides the header menu on mobile phones, when scrolling down and sh
 
 # Installation
 To use it, upload the *xExtension-MobileScrollMenu* folder in your ./extensions directory and enable it on the extension panel in FreshRSS.
+
+# Changelog
+0.2 
+- to prevent menu showup while switching expanded articles I created a "human-scroll recognition"
+
+0.1
+- first release
