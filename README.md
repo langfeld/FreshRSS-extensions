@@ -10,10 +10,10 @@ Stores the state of the folders locally and expand them automatically if necessa
 ## Mobile Scroll Menu:
 Automatically hides the header menu on mobile phones, when scrolling down and shows it when scrolling up.
 
-##Touch Control:
+## Touch Control:
 Add touch gestures to FreshRSS.
 
---
+# Installation
 
 To install an extension, download the extension archive first and extract it on your PC. 
 Then, upload the specific extension(s) you want on your server. 
