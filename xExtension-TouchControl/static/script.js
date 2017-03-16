@@ -17,6 +17,7 @@ $(document).ready(function ($) {
     // Init config
     $.detectSwipe.preventDefault = false;
     $.detectSwipe.threshold = 60;
+    bottom_nav_toggle(); // Hide bottom menu on pageload
 
     // Swipe from right edge
     $('body').on('swipefromright', function () {
