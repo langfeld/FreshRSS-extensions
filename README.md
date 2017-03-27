@@ -13,6 +13,9 @@ Automatically hides the header menu on mobile phones, when scrolling down and sh
 ## Touch Control:
 Add touch gestures to FreshRSS.
 
+## Smart Mobile Menu:
+Minimizes the required button space and groups buttons
+
 # Installation
 
 To install an extension, download the extension archive first and extract it on your PC. 
