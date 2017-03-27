@@ -1,0 +1,8 @@
+{
+	"name": "Smart Mobile Menu",
+	"author": "Marco Heizmann",
+	"description": "Minimizes the required button space and groups buttons.",
+	"version": 0.1,
+	"entrypoint": "SmartMobileMenu",
+	"type": "user"
+}
